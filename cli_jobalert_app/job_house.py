@@ -259,6 +259,23 @@ def databaseConnection():
     # print("database Connected Succesfully")
     cursor = conn.cursor()
 
+    query =cursor.execute("CREATE TABLE USERS"
+                          "(ID INTEGER PRIMARY KEY AUTOINCREMENT,"
+                          "NAME  TEXT  NOT NULL,"
+                          "PHONE CHAR(11) NOT NULL,"
+                          "EMAIL CHAR(50) NOT NULL,"
+                          "USERNAME CHAR(30) NOT NULL,"
+                          "PASSWORD CHAR(20) NOT NULL)")
+
+
+    query2 = cursor.execute("CREATE TABLE USER_POSTS(ID INTEGER PRIMARY KEY AUTOINCREMENT,"
+                            "NAME TEXT NOT NULL,"
+                            "JOBTYPE TEXT NOT NULL,"
+                            "JOBDESCRIPTION TEXT NOT NULL,"
+                            "LOCATION TEXT NOT NULL,"
+                            "COMPANYNAME TEXT NOT NULL,"
+                            "TIMEPOSTED TEXT NOT NULL)")
 
     conn.close()
+
 home()

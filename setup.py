@@ -2,13 +2,13 @@ from distutils.core import setup
 setup(
     name = 'cli_jobalert_app',         # How you named your package folder (MyLib)
     packages = ['cli_jobalert_app'],   # Chose the same as "name"
-    version = '0.1.3',      # Start with a small number and increase it with every change you make
+    version = '0.1.4',      # Start with a small number and increase it with every change you make
     license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     description = 'This is a cli_application that stores job postings and help users locate jobs around them',   # Give a short description about your library
     author = 'Andrew Gabriel',                   # Type in your name
     author_email = 'buedgabby@gmail.com',      # Type in your E-Mail
     url = 'https://github.com/Gabriel01osabuede/',   # Provide either the link to your github or to your website
-    download_url = 'https://github.com/Gabriel01osabuede/cli_app_jobalert/archive/0.1.3.tar.gz',    # I explain this later on
+    download_url = 'https://github.com/Gabriel01osabuede/cli_app_jobalert/archive/0.1.4.tar.gz',    # I explain this later on
     keywords = ['users', 'posts', 'jobs'],   # Keywords that define your package best
     install_requires=[
         '' # I get to this in a second
